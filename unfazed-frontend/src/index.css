@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+@theme {
+  --font-serif: var(--font-display);
+  --font-sans: var(--font-sans);
+  --color-canvas: var(--bg-canvas);
+  --color-cream: var(--bg-surface-alt);
+  --color-charcoal: var(--ink-primary);
+  --color-sage: var(--accent-sage);
+  --color-forest: var(--accent-primary);
+  --color-forest-dark: var(--accent-primary-hover);
+  --color-warm-grey: var(--ink-subtle);
+}
+
+@layer base {
+  html {
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+    font-size: 1rem;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-display);
+    font-weight: 650;
+    letter-spacing: -0.035em;
+  }
+
+  ::selection {
+    background-color: rgba(166, 179, 154, 0.35);
+    color: var(--ink-primary);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Editorial scroll-reveal animation */
+.reveal-base {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity var(--duration-reveal) var(--ease-editorial),
+    transform var(--duration-reveal) var(--ease-editorial);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal-base {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Subtle horizontal scrollbar hiding for showcase rail */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
