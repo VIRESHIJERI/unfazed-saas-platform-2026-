@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const VARIANTS = {
   primary:
-    'bg-[#52644F] text-[#F8F7F3] hover:bg-[#41503E] border border-[#52644F] hover:border-[#41503E]',
+    'bg-[#123B32] text-[#F7F4EE] hover:bg-[#0D3029] border border-[#123B32] hover:border-[#0D3029]',
   secondary:
     'bg-transparent text-[#242522] border border-[#242522]/25 hover:border-[#242522] hover:bg-[#242522]/[0.04]',
   dark:

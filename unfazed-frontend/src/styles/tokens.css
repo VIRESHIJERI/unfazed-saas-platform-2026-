@@ -1,44 +1,46 @@
 :root {
-  --bg-canvas: #F7F8F6;
-  --bg-surface-alt: #F0F2EF;
+  --bg-canvas: #F7F4EE;
+  --bg-surface-alt: #F2EEE6;
   --bg-surface-elevated: #FFFFFF;
-  --bg-dark: #1F2925;
-  --bg-dark-elevated: #26332E;
+  --bg-dark: #0D100E;
+  --bg-forest: #111C16;
+  --bg-dark-elevated: #181C1A;
 
-  --ink-primary: #1F2925;
-  --ink-secondary: #4C5953;
-  --ink-muted: #667269;
-  --ink-subtle: #7C8781;
-  --ink-on-dark: #F7F8F6;
-  --ink-on-dark-muted: #CBD2CE;
+  --ink-primary: #1A1D1B;
+  --ink-secondary: #59605B;
+  --ink-muted: #747B76;
+  --ink-subtle: #898F8A;
+  --ink-on-dark: #F7F4EE;
+  --ink-on-dark-muted: #D8E2DC;
 
-  --accent-primary: #3F6454;
-  --accent-primary-hover: #315344;
-  --accent-sage: #A6B39A;
-  --accent-sage-soft: rgba(63, 100, 84, 0.10);
+  --accent-primary: #123B32;
+  --accent-primary-hover: #0D3029;
+  --accent-sage: #4E6E5D;
+  --accent-sage-soft: rgba(78, 110, 93, 0.10);
 
-  --border-hairline: rgba(31, 41, 37, 0.12);
-  --border-hairline-strong: rgba(31, 41, 37, 0.20);
-  --border-on-dark: rgba(247, 248, 246, 0.16);
+  --border-hairline: rgba(26, 29, 27, 0.11);
+  --border-hairline-strong: rgba(26, 29, 27, 0.20);
+  --border-on-dark: rgba(250, 248, 244, 0.15);
 
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --shadow-soft: 0 8px 24px rgba(31, 41, 37, 0.07);
-  --shadow-frame: 0 16px 40px rgba(31, 41, 37, 0.10);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --shadow-soft: 0 10px 32px rgba(26, 29, 27, 0.07);
+  --shadow-frame: 0 20px 56px rgba(13, 16, 14, 0.16);
 
-  --container-wide: 1280px;
+  --container-wide: 1440px;
   --space-section: clamp(4.5rem, 7vw, 7rem);
 
-  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --text-hero: clamp(2.75rem, 5vw, 4.25rem);
-  --text-section: clamp(2rem, 3.5vw, 3.25rem);
+  --font-display-stack: 'Cormorant Garamond', Georgia, serif;
+  --font-body-stack: 'Plus Jakarta Sans', Arial, sans-serif;
+  --font-mono-stack: 'JetBrains Mono', Consolas, monospace;
+  --text-hero: clamp(3.55rem, 8vw, 8.5rem);
+  --text-section: clamp(2.5rem, 5vw, 5rem);
   --text-card: clamp(1.125rem, 1.5vw, 1.35rem);
 
   --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
-  --duration-reveal: 500ms;
-  --duration-ui: 180ms;
+  --duration-reveal: 720ms;
+  --duration-ui: 220ms;
 }
 
 @media (prefers-reduced-motion: reduce) {

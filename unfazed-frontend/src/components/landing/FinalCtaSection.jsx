@@ -4,30 +4,31 @@ import Button from '../common/Button';
 
 export default function FinalCtaSection() {
   return (
-    <section className="bg-[#242522] py-24 text-[#F8F7F3] md:py-32">
+    <section className="relative overflow-hidden bg-[var(--bg-dark)] py-24 text-[var(--ink-on-dark)] md:py-32">
       <Container>
         <Reveal>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#A6B39A]">
-              Begin Your Practice Space
-            </p>
-            <h2 className="mt-5 text-[var(--text-section)] leading-[1.08] text-[#F8F7F3]">
-              Make more room for the work that matters.
-            </h2>
-            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#C5C3BA] md:text-lg">
-              Spend less time managing your practice and more time focusing on your clients.
-            </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <Button to="/register" variant="light" size="lg">
-                Get started
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-9">
+              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#A6B39A]">
+                Begin with UNFAZZED
+              </p>
+              <h2 className="mt-5 max-w-4xl text-5xl leading-[0.98] tracking-[-0.055em] text-[var(--ink-on-dark)] md:text-7xl">
+                Build a better practice. Deliver better care.
+              </h2>
+            </div>
+            <div className="lg:col-span-3 lg:text-right">
+              <Button to="/register" variant="light" size="lg" className="group w-full lg:w-auto">
+                Get Started
+                <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1">→</span>
               </Button>
-              <Button href="#product" variant="ghost-light" size="lg">
-                Review features
-              </Button>
+              <p className="mt-4 text-xs text-[var(--ink-on-dark-muted)]">
+                Registration is coming in Module 1
+              </p>
             </div>
           </div>
         </Reveal>
       </Container>
+      <div className="absolute -bottom-20 right-[-80px] h-48 w-48 border border-white/10" aria-hidden="true" />
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Container from '../common/Container';
 import Reveal from '../common/Reveal';
+import { BrandLogo } from '../common/BrandLogo';
 
 const TABS = [
   { id: 'overview', label: 'Overview' },
@@ -43,7 +44,7 @@ export default function ProductExperienceSection() {
             {/* Top Workspace Bar */}
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#242522]/10 bg-white px-6 py-4">
               <div className="flex items-center gap-3">
-                <span className="h-2 w-2 rounded-sm bg-[#3F6454]" aria-hidden="true" />
+                <BrandLogo variant="icon" className="h-8 w-8" />
                 <span className="font-sans text-xs font-semibold uppercase tracking-[0.18em] text-[#242522]">
                   UNFAZZED Workspace
                 </span>

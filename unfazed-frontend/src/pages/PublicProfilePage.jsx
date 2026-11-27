@@ -42,7 +42,7 @@ export default function PublicProfilePage() {
                     <p className="text-2xl font-bold">₹1,800</p>
                     <p className="text-sm text-[var(--ink-muted)]">60 minutes</p>
                   </div>
-                  <Button to="/register" variant="dark" size="lg" className="mt-5 w-full">
+                  <Button to="/book/dr-meera-iyer" variant="dark" size="lg" className="mt-5 w-full">
                     View available times
                   </Button>
                   <p className="mt-3 text-center text-xs text-[var(--ink-muted)]">Secure booking · INR · Asia/Kolkata</p>
